@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from './Button';
+import Card from './Card';
 
 /**
  * Custom hook for managing tasks with localStorage persistence
@@ -71,7 +72,7 @@ const TaskManager = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 max-w-xl mx-auto">
       <h2 className="text-2xl font-bold mb-6">Task Manager</h2>
 
       {/* Task input form */}
@@ -123,16 +124,17 @@ const TaskManager = () => {
           </li>
         ) : (
           filteredTasks.map((task) => (
-            <li
+            <Card
               key={task.id}
-              className="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 dark:border-gray-700"
+              className={`flex items-center justify-between p-3 border hover:bg-gray-50 dark:hover:bg-gray-700 dark:border-gray-700 transition-all duration-300 opacity-0 animate-fadeIn`}
+              style={{ animationDelay: `${0.05 * filteredTasks.indexOf(task)}s`, animationFillMode: 'forwards' }}
             >
               <div className="flex items-center gap-3">
                 <input
                   type="checkbox"
                   checked={task.completed}
                   onChange={() => toggleTask(task.id)}
-                  className="h-5 w-5 text-blue-600 rounded focus:ring-blue-500"
+                  className="h-5 w-5 text-blue-600 rounded focus:ring-blue-500 transition-colors duration-200"
                 />
                 <span
                   className={`${
@@ -147,10 +149,11 @@ const TaskManager = () => {
                 size="sm"
                 onClick={() => deleteTask(task.id)}
                 aria-label="Delete task"
+                className="transition-colors duration-200"
               >
                 Delete
               </Button>
-            </li>
+            </Card>
           ))
         )}
       </ul>

@@ -1,71 +1,49 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19915796&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# 🎨 Week 3 React.js Assignment: Task Manager & API Explorer
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive React application built with Vite, Tailwind CSS, and React Router. Features a Task Manager, API data explorer, theme switcher (light/dark), and reusable UI components.
 
-## Assignment Overview
+## 🚀 Features
+- Task Manager (add, complete, delete, filter tasks; persists to localStorage)
+- API Data Explorer (fetches posts from JSONPlaceholder, search, pagination, loading/error states)
+- Responsive design (mobile, tablet, desktop)
+- Theme switcher (light/dark mode)
+- Reusable components: Button, Card, Navbar, Footer, Layout
+- Routing with React Router
+- Tailwind CSS for styling and transitions
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
-
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
+## 🛠️ Setup Instructions
+1. **Clone the repository**
+   ```sh
+   git clone <your-repo-url>
+   cd week-3-react-js-assignment-marambaou
    ```
+2. **Install dependencies**
+   ```sh
    npm install
    ```
-4. Start the development server:
-   ```
+3. **Start the development server**
+   ```sh
    npm run dev
    ```
+4. **Open in your browser**
+   - Visit [http://localhost:5173](http://localhost:5173)
 
-## Files Included
+## 🌐 Deployed Application
+- [View Live Demo](<your-deployment-url>)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## 🖼️ Screenshots
+> Add screenshots of your app here (Home, Task Manager, API Data, Light/Dark mode)
 
-## Requirements
+## 📁 Project Structure
+- `src/components/` – Reusable UI and feature components
+- `src/assets/` – Static assets
+- `src/App.jsx` – Main app with routing
+- `src/main.jsx` – Entry point
+- `src/index.css` – Tailwind CSS import
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+## 📚 Technologies Used
+- React 19 + Vite
+- Tailwind CSS 4
+- React Router 6
 
-## Project Structure
-
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
-
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+## © 2024 Your Name. All rights reserved.
