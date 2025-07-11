@@ -32,7 +32,10 @@ A responsive React application built with Vite, Tailwind CSS, and React Router. 
 - [View Live Demo](<your-deployment-url>)
 
 ## 🖼️ Screenshots
-> Add screenshots of your app here (Home, Task Manager, API Data, Light/Dark mode)
+.assets/Screenshot 1
+.assets/Screenshot 2
+.assets/Screenshot 3
+
 
 ## 📁 Project Structure
 - `src/components/` – Reusable UI and feature components
